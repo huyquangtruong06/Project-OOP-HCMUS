@@ -1,86 +1,95 @@
-Tower Defense Game
-Object-Oriented Programming Project
-Language: C++
-University: Ho Chi Minh City University of Science
-Lecturer: TRƯƠNG TOÀN THỊNH
+# 🎮 Tower Defense Game  
+**Object-Oriented Programming Project**  
+**Language:** C++  
+**University:** Ho Chi Minh City University of Science  
+**Lecturer:** TRƯƠNG TOÀN THỊNH
 
-1. Introduction
-This project aims to apply foundational programming techniques, data structures, and object-oriented programming (OOP) principles to build a basic Tower Defense game using the C++ language.
+---
 
-To successfully develop this game, students should have knowledge of:
+## 1. 📘 Introduction
 
-File I/O operations
+This project is designed to help students apply basic programming techniques, data structures, and **object-oriented programming (OOP)** concepts to build a simple **Tower Defense** game using **C++**.
 
-Program control flow
+### 📚 Required Knowledge:
+- File I/O operations
+- Control flow and process logic
+- Data structures (e.g., arrays, lists, queues)
+- Object-oriented programming (classes, inheritance, polymorphism, etc.)
 
-Basic data structures
+Students are expected to conduct additional research to complete the game and enhance its functionality.
 
-Object-oriented programming
+---
 
-This project serves as a tutorial for students to practice game development at an introductory level. It also encourages independent research and teamwork to enhance the final product.
+## 2. 🧩 Game Scenario
 
-2. Game Scenario
-At the start of the game, a map and a parameter configuration table will appear for players to input desired values.
+- At the start, the game presents a **map** and a **configuration table** for the player to input initial parameters.
+- After setup, the game runs **automatically**, and the player observes the battle.
+- The game ends when:
+  - All enemies are destroyed ✅
+  - An enemy reaches the finish line ❌
 
-Once the setup is complete, the game runs automatically, and players observe the outcome.
+### 🎮 After the Game Ends:
+- Press `'y'` → Restart game with initial settings
+- Press any other key → Exit game
 
-The game ends under one of the following conditions:
+### 🚩 Progressing Through Levels:
+- Defeating all enemies advances the player to the **next level**.
+- Each level increases in difficulty (e.g., more enemies, stronger resistance).
+- Reaching a certain level is considered a **victory**, otherwise the game restarts.
 
-All enemies are destroyed.
+---
 
-An enemy successfully reaches the finish line.
+## 3. ✅ Project Requirements
 
-After the game ends, the player is prompted:
+### 🔫 Collision Handling
+- Implement **bullet-enemy collision detection**
+- Add **visual effects** for more engaging gameplay
 
-Press 'y' to restart the game with the original state.
+### 💾 Save & Load Functionality
+- Allow users to **save the game state**
+- Implement loading of **saved games**
 
-Press any other key to exit the game.
+### 🗺 Pre-game Interface
+- Before the game starts, display:
+  - The **map**
+  - Tower **buildable zones**
+  - Enemy **paths**
+- Let players **analyze** and **choose parameters** strategically
 
-If the player defeats all enemies, they proceed to the next level. Each new level increases difficulty (e.g., more enemies, tougher resistance, etc.).
+### 🧱 Multiple Levels
+- Create at least **4 levels**, each with:
+  - A **unique map**
+  - Increasing difficulty (e.g., enemy speed, quantity)
 
-The game concludes when the player reaches a predefined final level (win condition) or restarts after game over.
+### 🧭 Game Menu
+- Implement a menu with options:
+  - `New Game`
+  - `Load Game`
+  - `Settings`
 
-3. Project Requirements
-The following key features must be implemented:
+- Add **audio support**:
+  - Background music
+  - Game sound effects
+- Include **on/off toggle** for both types of sound
 
-🔫 Collision Handling
-Implement bullet-enemy collision detection.
+### 🌟 Team-Specific Special Feature
+- Each group must design a **unique feature** that is not shared with other teams.
+- This feature should **enhance gameplay** and **distinguish** your version of the game.
 
-Design visual effects for collisions to make the gameplay more engaging.
+---
 
-💾 Save/Load System
-Allow players to save the game at any time.
+## 🔧 Suggestions for Implementation
+- Use OOP to define classes like `Tower`, `Enemy`, `Bullet`, `Map`, and `GameManager`
+- Consider using **STL containers** such as `vector`, `queue`, and `map`
+- Modularize code into different files for scalability
+- Design reusable functions and follow clean coding practices
 
-Provide an option to load previously saved games to continue from where they left off.
+---
 
-🗺 Game Setup Interface
-Instead of starting the game immediately, display the map, buildable tower locations, and enemy paths before gameplay begins.
+## 🎯 Final Note
 
-Allow players to analyze the environment and choose suitable parameters for better strategy planning.
+This project encourages creativity and teamwork. Students should focus on both **functionality** and **user experience** to deliver a polished game.
 
-🧩 Multi-Level Design
-The game must include at least 4 levels, each with a unique map.
+Good luck and enjoy coding your Tower Defense game!
 
-Increasing difficulty may involve faster enemies or higher enemy count.
-
-📜 Game Menu
-Design a game menu system with options such as:
-
-New Game
-
-Load Game
-
-Settings
-
-Implement two types of audio:
-
-Background music
-
-In-game sound effects
-
-Include on/off toggles for both sound types.
-
-🌟 Special Feature (Team-Specific)
-Each team must develop a unique advanced feature that distinguishes their game.
-
-This special feature must not be shared among different teams.
+---
